@@ -1,0 +1,6 @@
+<!--pages/img/img.wxml-->
+<view class='content'>
+  <view class='imgBox' wx:for='{{ list }}' wx:key='{{ list }}'>
+    <image src='{{ item }}' class='img'></image>
+  </view>
+</view>

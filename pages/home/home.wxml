@@ -1,0 +1,24 @@
+<!--pages/home/home.wxml-->
+<swiper indicator-dots="true" autoplay="true" interval='2000' indicator-active-color="#f66" circular="true">
+    <swiper-item>
+      <image class='top-img' src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image class='top-img' src='http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image class='top-img' src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
+    </swiper-item>
+  </swiper>
+<view class='list'>
+  <navigator wx:for="{{ list }}" wx:key="{{ index }}" url="../detail/detail?name={{ item.realName }}&imgList={{ item.avatarUrl }}" class='listimg'>
+    <text class="user-motto">城市:{{ item.city }}</text>
+    <view>姓名：{{ item.realName }}</view>
+    <text>身高：{{ item.height }}cm</text>
+    <text>体重：{{ item.weight }}kg</text>
+    <view class='imgBox'>
+      <image class='img' src='{{ item.avatarUrl }}'></image>
+    </view>
+  </navigator>
+</view>
+

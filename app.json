@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/list/list",
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/img/img"
+  ],
+  "window": {
+    "backgroundTextStyle": "black",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "淘女郎",
+    "navigationBarTextStyle": "#fff",
+    "backgroundColor": "rgba(230,230,230,0.8)"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "img/2.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "列表",
+        "iconPath": "img/1.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "个人",
+        "iconPath": "img/1.png"
+      }
+    ],
+    "selectedColor": "#f66",
+    "backgroundColor": "rgba(230,230,230,0.8)",
+    "borderStyle": "white"
+  }
+}

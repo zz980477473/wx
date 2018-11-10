@@ -1,0 +1,12 @@
+<!--pages/list/list.wxml-->
+<view class='app'>
+  <view wx:for='{{ list }}' wx:key='{{ index }}' class ="list {{ curNav == item ? 'active' : '' }}" bindtap='giveinfo' data-type = '{{ item }}'>
+    {{ item }}
+  </view>
+  <scroll-view class='list-r'scroll-y="true">
+    <view class='ul-li' wx:for='{{ listImg }}' bindtap='showImg' data-index='{{ item.imgList }}' wx:key='{{ index }}'>
+      <image src='{{ item.avatarUrl }}' class='image'></image>
+      <text class='name'>{{ item.realName }}</text>
+    </view>
+  </scroll-view>
+</view>

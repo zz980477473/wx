@@ -1,0 +1,8 @@
+<!--pages/detali/detail.wxml-->
+<view class='view'>
+  <view class='content' style="  background-image: url('{{ imgList }}')"></view>
+  <text class='name'>{{ name }}</text>
+  <image class='showImg' src='{{ imgList }}'></image>
+  <button class='download' bindtap='download'>下载图片</button>
+</view>
+
